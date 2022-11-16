@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,700&display=swap");
+
+.gradient-border {
+  display: flex;
+  border-radius: 80px 0px 80px 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
+  /* font-family: "Press Start 2P", sans-serif; */
+  background-image: url("./gif/gif1.gif");
+  border: 3px solid white;
+  background-position: center;
+  min-height: 42vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17em;
+  margin-bottom: 20em;
+}
+
+/** MÓVIL **/
+@media (min-width: 320px) and (max-width: 480px) {
+  section {
+    margin-top: -4em;
+    min-height: 32vh;
+    margin-bottom: 1em;
+  }
+  .gradient-border {
+    margin-bottom: 16em;
+  }
+  .content {
+    margin-left: -2.5em;
+    font-size: 0.7em;
+  }
+}
+
+/** TABLET **/
+@media (min-width: 481px) and (max-width: 768px) {
+  section {
+    margin-top: -2em;
+    min-height: 32vh;
+    margin-bottom: 1em;
+  }
+  .gradient-border {
+    margin-bottom: 22em;
+  }
+  .content {
+    margin-left: -2.5em;
+    font-size: 0.7em;
+  }
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  margin-left: 0.3em;
+  color: #00ff00;
+  font-size: 7em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #00ff00;
+}
+
+.content h2:nth-child(2) {
+  color: #00ff00;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}

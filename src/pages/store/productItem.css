@@ -1,0 +1,50 @@
+.productName {
+  color: black;
+}
+
+.añadir {
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #2ecc71;
+  border: none;
+  border-bottom: 5px solid #27ae60;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.añadir:hover,
+.añadir:active {
+  -webkit-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+  border-bottom: 1px solid #2ecc71;
+}
+
+.añadirMas {
+  position: relative;
+  padding: 10px 55px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #78288c;
+  border: none;
+  border-bottom: 5px solid #b659cd;
+  -webkit-transition: all 0.1s;
+  transition: transform 0.1s;
+}
+
+.añadirMas:hover,
+.añadirMas:active {
+  -webkit-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+  border-bottom: 1px solid #b659cd;
+}
+

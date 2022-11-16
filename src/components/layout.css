@@ -1,0 +1,67 @@
+main {
+  margin-bottom: 7.5em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  main {
+    margin-bottom: 7em;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+/* common */
+.ribbon {
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  padding-top: -3em;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #b22222;
+  /* background-image: url("../img/tira.png"); */
+  background-size: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font: 700 18px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: 45px;
+  left: -10px;
+  position: fixed;
+}
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+.ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(45deg);
+}

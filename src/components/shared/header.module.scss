@@ -1,0 +1,43 @@
+.header {
+  padding: 10px;
+  padding-top: 1em;
+  padding-left: 4.5em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+
+  h5 {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: black;
+
+    svg {
+      width: 18px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    padding-left: 1em;
+    padding-bottom: -5em;
+    margin-bottom: -5.5em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.header {
+  h5:hover {
+    color: #00ff00;
+  }
+}
